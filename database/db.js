@@ -8,13 +8,13 @@ const Database = {};
 
 Database.getAll = async () => {
     const asArray = Object.values(data);
-    await randomDelay();
+    // await randomDelay();
     return asArray;
 };
 
 Database.getById = async (id) => {
     const entry = data[id];
-    await randomDelay();
+    // await randomDelay();
     return entry;
 };
 
