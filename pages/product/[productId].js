@@ -6,7 +6,6 @@ import { Box } from "@chakra-ui/react"
 
 
 const ProductItem = () => {
-    //PROBLEM: Al actualizar no carga el id
     const router = useRouter();
     const [product, setproduct] = useState([]);
 
