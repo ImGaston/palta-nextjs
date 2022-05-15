@@ -17,7 +17,6 @@ const ProductItem = () => {
     }, [router.query])
     return (
         <div>
-            <Navbar />
             <div>El nombre del producto es: {product.name} </div>
             <div>Sale: {product.price} </div>
             <Button colorScheme='teal' variant='solid' m={[3]}>Comprar</Button>

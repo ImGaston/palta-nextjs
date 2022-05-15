@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '../components/Navbar/Navbar';
 import Link from 'next/link';
 
 const Home = () => {
@@ -19,7 +18,6 @@ const Home = () => {
 
     return (
         <div>
-            <Navbar />
             <h1>Hola!</h1>
             {productList.map((product) => (
                 <div>
