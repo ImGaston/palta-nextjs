@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link';
+import ProductList from '@/components/ProductList/ProductList';
 
 const Home = () => {
     const [productList, setproductList] = useState([]);
 
     useEffect(() => {
-        //pido la info
         window.fetch('/api/palta')
-        //lo transformo en un JSON
         .then((response) => response.json())
-        //lo cargo en el estado de productos
-        .then(({ data, length }) => {
+        .then(({ data }) => {
             setproductList(data)
         })
     }, [])
@@ -19,8 +17,9 @@ const Home = () => {
     return (
         <div>
             <h1>Hola!</h1>
+            {/* <ProductList products={productList}></ProductList> */}
             {productList.map((product) => (
-                <div>
+                <div key={product.id}>
                     <Link href={`/product/${product.id}`}>
                         <a>{product.name}</a>
                     </Link>

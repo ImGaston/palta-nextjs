@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Navbar from '../../components/Navbar/Navbar'
-import { Button, ButtonGroup } from '@chakra-ui/react'
-import { Box } from "@chakra-ui/react"
 
 
 const ProductItem = () => {
@@ -19,7 +17,6 @@ const ProductItem = () => {
         <div>
             <div>El nombre del producto es: {product.name} </div>
             <div>Sale: {product.price} </div>
-            <Button colorScheme='teal' variant='solid' m={[3]}>Comprar</Button>
         </div>
     )
 }
