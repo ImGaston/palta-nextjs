@@ -15,17 +15,10 @@ const Home = () => {
 
 
     return (
-        <div>
-            <h1>Hola!</h1>
+        <main>
+            <h1 className="text-3xl font-bold underline">Hola!</h1>
             <ProductList products={productList}></ProductList>
-            {/* {productList.map((product) => (
-                <div key={product.id}>
-                    <Link href={`/product/${product.id}`}>
-                        <a>{product.name}</a>
-                    </Link>
-                </div>
-            ))} */}
-        </div>
+        </main>
     )
 }
 
