@@ -15,8 +15,8 @@ const Home = () => {
 
 
     return (
-        <main>
-            <h1 className="text-3xl font-bold underline">Hola!</h1>
+        <main className=''>
+            <h1 className="text-3xl font-bold text-center">Palta Shop</h1>
             <ProductList products={productList}></ProductList>
         </main>
     )
